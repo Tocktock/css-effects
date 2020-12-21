@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: black;
+}
+
+.loader {
+  position: relative;
+}
+
+.loader span {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background: #00ff00;
+  display: block;
+  animation: animate 4s linear infinite;
+  box-shadow: 0 0 0.8rem #00ff00, 0 0 2rem #00ff00, 0 0 4rem #00ff00,
+    0 0 6rem #00ff00, 0 0 8rem #00ff00;
+  animation-delay: calc(-0.5s * var(--i));
+  transform-origin: bottom;
+}
+
+@keyframes animate {
+  0% {
+    top: 0;
+    left: 15rem;
+    transform: scaleY(1);
+    filter: hue-rotate(0deg);
+  }
+
+  2% {
+    top: 0;
+    left: 10rem;
+    transform: scaleY(0.4);
+  }
+  10% {
+    top: 0;
+    left: 5rem;
+    transform: scaleY(1);
+  }
+  40% {
+    top: 0;
+    left: -10rem;
+  }
+
+  60% {
+    top: -13rem;
+    left: -10rem;
+  }
+
+  85% {
+    top: -13rem;
+    left: 15rem;
+  }
+  100% {
+    top: 0;
+    left: 15rem;
+    filter: hue-rotate(360deg);
+  }
+}
