@@ -4,3 +4,4 @@
 
 - glowing-aqure : [refer to](https://www.youtube.com/watch?v=v2QMoZz0ZXc&t=23s)
 - card-hover-effects : [refer to](https://www.youtube.com/watch?v=EZqhWu8GJ6U)
+- card-slider : (no Refer)
